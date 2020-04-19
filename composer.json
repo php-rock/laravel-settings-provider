@@ -1,0 +1,49 @@
+{
+    "name": "php-rock/laravel-settings-provider",
+    "description": "Laravel Settings Provider",
+    "keywords": [
+        "laravel"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jack Shpartko",
+            "email": "3300101@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "PhpRock\\SettingsProvider\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.3.0",
+        "illuminate/routing": "^6|^7",
+        "illuminate/session": "^6|^7",
+        "illuminate/support": "^6|^7",
+        "symfony/debug": "^4|^5",
+        "symfony/finder": "^4|^5"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        },
+        "laravel": {
+            "providers": [
+                "PhpRock\\SettingsProvider\\Providers\\SettingsServiceProvider"
+            ],
+            "aliases": {
+                "SettingsProvider": "PhpRock\\SettingsProvider\\Facades\\ServiceProvider"
+            }
+        }
+    },
+    "require-dev": {
+        "laravel/framework": "7.6.*"
+    }
+}
