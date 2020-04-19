@@ -31,9 +31,6 @@
         "symfony/finder": "^4|^5"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "0.1-dev"
-        },
         "laravel": {
             "providers": [
                 "PhpRock\\SettingsProvider\\Providers\\SettingsServiceProvider"
